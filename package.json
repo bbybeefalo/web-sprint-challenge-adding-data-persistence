@@ -17,6 +17,7 @@
     "supertest": "6.2.3"
   },
   "dependencies": {
+    "knex": "^2.4.0",
     "sqlite3": "^5.0.8"
   }
 }

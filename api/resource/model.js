@@ -8,6 +8,12 @@ function add(resource) {
     })
 }
 
+function find() {
+    return db('resources')
+}
+
+
 module.exports = {
-    add
+    add,
+    find
 }

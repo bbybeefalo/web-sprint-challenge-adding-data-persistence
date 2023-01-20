@@ -12,7 +12,6 @@ function find() {
     return db('resources')
 }
 
-
 module.exports = {
     add,
     find

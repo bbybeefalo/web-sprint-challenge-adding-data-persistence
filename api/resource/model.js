@@ -4,7 +4,7 @@ const db = require('../../data/dbConfig')
 function add(resource) {
     return db('resources').insert(resource)
     .then((id) => {
-        return db('resource_name').where('resource_id', id)
+        return db('resources').where('resource_id', id)
     })
 }
 

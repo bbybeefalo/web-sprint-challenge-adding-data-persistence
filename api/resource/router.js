@@ -7,7 +7,7 @@ router.post('/', validateResource, (req, res, next) => {
     const resource = req.body
     Resource.add(resource)
     .then(resource => {
-        res.status(200).json(resource)
+        res.status(200).json(resource[0])
     })
     .catch(next)
 })

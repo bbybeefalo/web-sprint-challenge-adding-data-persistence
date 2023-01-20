@@ -23,7 +23,7 @@ exports.up = async function (knex) {
             table.string('task_description')
                 .notNullable()
             table.string('task_notes')
-            table.boolean('task_completed')
+            table.boolean('task_completed').defaultTo(0)
             table.integer('project_id')
                 .unsigned()
                 .notNullable()
